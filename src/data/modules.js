@@ -1,0 +1,8 @@
+const modules = [
+  { id: 1, number: '01', title: 'Python for Data Science', description: 'Core Python, NumPy arrays and Pandas data structures for everyday analysis.', topics: ['Python basics', 'NumPy', 'Pandas', 'File handling'], objectives: ['Write clean Python for data tasks', 'Vectorise computations with NumPy', 'Manipulate tables with Pandas'] },
+  { id: 2, number: '02', title: 'Data Collection and Preprocessing', description: 'Gather data from files, APIs and the web, then clean and prepare it.', topics: ['CSV/JSON/APIs', 'Web scraping', 'Missing values', 'Feature engineering'], objectives: ['Collect data from multiple sources', 'Handle missing and duplicate data', 'Engineer useful features'] },
+  { id: 3, number: '03', title: 'Exploratory Data Analysis', description: 'Summarise, probe and test data to find patterns before modelling.', topics: ['Descriptive statistics', 'Correlation', 'Outliers', 'Hypothesis testing'], objectives: ['Summarise distributions', 'Detect outliers and relationships', 'Run basic statistical tests'] },
+  { id: 4, number: '04', title: 'Data Visualization', description: 'Communicate findings with static and interactive charts and dashboards.', topics: ['Matplotlib', 'Seaborn', 'Plotly', 'Dashboards'], objectives: ['Choose the right chart', 'Build publication-quality plots', 'Create interactive visuals'] },
+  { id: 5, number: '05', title: 'Machine Learning', description: 'Train, evaluate and tune regression, classification and neural network models.', topics: ['Regression', 'Classification', 'Evaluation', 'Neural networks'], objectives: ['Train supervised models', 'Evaluate with proper metrics', 'Build a simple neural network'] }
+]
+export default modules
