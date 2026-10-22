@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MBU Data Science Learning Portal</title>
+    <script>
+      // GitHub Pages SPA fallback.
+      // Unknown paths are served this file; remember the requested route and
+      // load the app, which restores it before React mounts.
+      (function () {
+        try {
+          sessionStorage.setItem(
+            'mbu-redirect',
+            window.location.pathname + window.location.search + window.location.hash
+          );
+          window.location.replace('__BASE__');
+        } catch (e) {
+          window.location.replace('__BASE__');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p style="font-family: system-ui, sans-serif; padding: 2rem">Loading the MBU Data Science Learning Portal…</p>
+  </body>
+</html>

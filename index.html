@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mbu-portal</title>
+    <meta name="description" content="MBU Data Science Learning Portal - interactive modules, experiments, tools and documentation for Data Science students." />
+    <title>MBU Data Science Learning Portal</title>
+    <script>
+      // Restores the route saved by the GitHub Pages 404 fallback (404.html)
+      // so the router picks up deep links like /DS-project/experiments.
+      (function () {
+        try {
+          var r = sessionStorage.getItem('mbu-redirect');
+          if (!r) return;
+          sessionStorage.removeItem('mbu-redirect');
+          history.replaceState(null, '', r);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>

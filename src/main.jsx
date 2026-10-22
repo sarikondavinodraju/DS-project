@@ -5,5 +5,7 @@ import App from './App'
 import { StoreProvider } from './context/Store'
 import './index.css'
 createRoot(document.getElementById('app')).render(
-  <React.StrictMode><BrowserRouter><StoreProvider><App /></StoreProvider></BrowserRouter></React.StrictMode>
+  // basename keeps the router working when the app is served from a sub-path
+  // (e.g. https://<user>.github.io/DS-project/) - it is "/" for local builds.
+  <React.StrictMode><BrowserRouter basename={import.meta.env.BASE_URL}><StoreProvider><App /></StoreProvider></BrowserRouter></React.StrictMode>
 )
