@@ -22,8 +22,8 @@ export default function SearchBar({ autoFocus, onDone, large }) {
   }
   return (
     <div className="relative">
-      <div className={`glass flex items-center gap-3 px-4 ${large ? 'py-4' : 'py-2.5'} focus-within:border-sky-400`}>
-        <Search size={20} className="text-sky-300 shrink-0" aria-hidden="true" />
+      <div className={`glass flex items-center gap-3 px-4 ${large ? 'py-4' : 'py-2.5'} focus-within:border-orange-400`}>
+        <Search size={20} className="text-orange-300 shrink-0" aria-hidden="true" />
         <input ref={ref} autoFocus={autoFocus} value={q} onChange={(e) => { setQ(e.target.value); setActive(0) }} onKeyDown={onKey}
           placeholder="Search experiments, modules, tools..." aria-label="Search" role="combobox" aria-expanded={!!q} aria-controls="search-results"
           className="bg-transparent outline-none flex-1 min-w-0 placeholder:text-slate-500" />
@@ -37,7 +37,7 @@ export default function SearchBar({ autoFocus, onDone, large }) {
             {results.map((r, i) => (
               <li key={r.to + r.title + i} role="option" aria-selected={i === active}>
                 <button onClick={() => go(r)} onMouseEnter={() => setActive(i)} className={`w-full text-left px-3 py-2 rounded-xl ${i === active ? 'bg-white/10' : ''}`}>
-                  <span className="text-[10px] tracking-widest text-sky-300">{r.type}</span>
+                  <span className="text-[10px] tracking-widest text-orange-300">{r.type}</span>
                   <span className="block font-medium">{r.title}</span>
                   <span className="block text-xs text-slate-400">{r.sub}</span>
                 </button>

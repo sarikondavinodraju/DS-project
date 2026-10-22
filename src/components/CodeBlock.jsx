@@ -8,7 +8,7 @@ export function highlight(code) {
   let out = '', last = 0, m
   while ((m = re.exec(code))) {
     out += esc(code.slice(last, m.index))
-    const cls = m[1] ? 'text-slate-500 italic' : m[2] ? 'text-emerald-300' : m[3] ? 'text-violet-300' : 'text-amber-300'
+    const cls = m[1] ? 'text-slate-500 italic' : m[2] ? 'text-emerald-300' : m[3] ? 'text-orange-300' : 'text-amber-300'
     out += `<span class="${cls}">${esc(m[0])}</span>`
     last = m.index + m[0].length
   }

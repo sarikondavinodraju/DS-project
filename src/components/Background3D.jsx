@@ -23,11 +23,11 @@ function Network({ count }) {
     <group ref={group}>
       <points>
         <bufferGeometry><bufferAttribute attach="attributes-position" args={[points, 3]} /></bufferGeometry>
-        <pointsMaterial size={0.06} color="#7dd3fc" transparent opacity={0.8} sizeAttenuation />
+        <pointsMaterial size={0.06} color="#fdba74" transparent opacity={0.8} sizeAttenuation />
       </points>
       <lineSegments>
         <bufferGeometry><bufferAttribute attach="attributes-position" args={[lines, 3]} /></bufferGeometry>
-        <lineBasicMaterial color="#8b5cf6" transparent opacity={0.18} />
+        <lineBasicMaterial color="#38bdf8" transparent opacity={0.18} />
       </lineSegments>
     </group>
   )

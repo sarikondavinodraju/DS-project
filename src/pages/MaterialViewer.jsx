@@ -43,7 +43,7 @@ export default function MaterialViewer() {
       {status === 'error' && (
         <div className="glass p-10 text-center" role="alert">
           <p className="font-medium">Unable to load material.</p>
-          <p className="text-sm text-slate-400 mt-1">Add the file <code className="text-sky-300">public{m.url}</code> and try again.</p>
+          <p className="text-sm text-slate-400 mt-1">Add the file <code className="text-orange-300">public{m.url}</code> and try again.</p>
           <button className="btn-primary mt-4" onClick={check}>Try again</button>
         </div>
       )}

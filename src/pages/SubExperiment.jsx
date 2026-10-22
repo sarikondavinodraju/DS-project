@@ -20,7 +20,7 @@ export default function SubExperiment() {
     <PageWrap>
       <Breadcrumbs items={[{ label: 'Home', to: '/' }, { label: 'Experiments', to: '/experiments' }, { label: `Experiment ${e.number}`, to: `/experiments/${e.id}/overview` }, { label: s.title }]} />
       <div className="flex flex-wrap items-start justify-between gap-3 mb-8">
-        <div><p className="text-xs tracking-widest text-sky-300">EXPERIMENT {e.number} · PART {s.id}</p><h1 className="text-3xl font-bold">{s.title}</h1></div>
+        <div><p className="text-xs tracking-widest text-orange-300">EXPERIMENT {e.number} · PART {s.id}</p><h1 className="text-3xl font-bold">{s.title}</h1></div>
         <button className={isDone ? 'btn-primary' : 'btn-ghost'} onClick={() => toggleDone(key)} aria-pressed={isDone}>{isDone ? <CheckCircle2 size={16} /> : <Circle size={16} />}{isDone ? 'Completed' : 'Mark as complete'}</button>
       </div>
       <div className="space-y-8">

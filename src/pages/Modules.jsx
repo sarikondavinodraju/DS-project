@@ -20,7 +20,7 @@ export default function Modules() {
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
         {modules.map((m, i) => (
           <motion.article key={m.id} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.06 }} whileHover={{ y: -4 }} className="glass p-6 flex flex-col gap-3">
-            <span className="text-xs tracking-widest text-sky-300">MODULE {m.number}</span>
+            <span className="text-xs tracking-widest text-orange-300">MODULE {m.number}</span>
             <h2 className="text-xl font-semibold">{m.title}</h2>
             <p className="text-sm text-slate-400">{m.description}</p>
             <div className="flex flex-wrap gap-1">{m.topics.map((t) => <span key={t} className="chip">{t}</span>)}</div>

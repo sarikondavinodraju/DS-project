@@ -19,8 +19,8 @@ export default function Tools() {
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
               {tools.filter((t) => t.category === c).map((t, i) => (
                 <motion.article key={t.id} initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} whileHover={{ y: -4 }} className="glass p-5 flex flex-col gap-3">
-                  <span className="h-11 w-11 rounded-xl bg-gradient-to-br from-sky-500/30 to-violet-500/30 grid place-items-center" aria-hidden="true"><Icon size={22} /></span>
-                  <div><h3 className="text-lg font-semibold">{t.name}</h3><p className="text-xs text-sky-300">{t.category}</p></div>
+                  <span className="h-11 w-11 rounded-xl bg-gradient-to-br from-orange-500/30 to-sky-500/30 grid place-items-center" aria-hidden="true"><Icon size={22} /></span>
+                  <div><h3 className="text-lg font-semibold">{t.name}</h3><p className="text-xs text-orange-300">{t.category}</p></div>
                   <p className="text-sm text-slate-400 flex-1">{t.description}</p>
                   <div className="flex flex-wrap gap-2">
                     <Link to={`/tools/${t.id}`} className="btn-primary">Documentation <ArrowRight size={14} /></Link>

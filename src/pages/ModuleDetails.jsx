@@ -19,7 +19,7 @@ export default function ModuleDetails() {
   return (
     <PageWrap>
       <Breadcrumbs items={[{ label: 'Home', to: '/' }, { label: 'Modules', to: '/modules' }, { label: `Module ${m.number}` }]} />
-      <p className="text-xs tracking-widest text-sky-300">MODULE {m.number}</p>
+      <p className="text-xs tracking-widest text-orange-300">MODULE {m.number}</p>
       <h1 className="text-3xl font-bold mb-8">{m.title}</h1>
       <div className="grid md:grid-cols-3 gap-5 mb-10">
         <section className="glass p-5"><h2 className="font-semibold mb-2">Overview</h2><p className="text-sm text-slate-400">{m.description}</p></section>
@@ -31,7 +31,7 @@ export default function ModuleDetails() {
       <h2 className="h2">Study Materials</h2>
       <div className="grid sm:grid-cols-2 gap-3 mb-10">
         {materials.filter((x) => x.moduleId === m.id).map((x) => (
-          <Link key={x.id} to={`/materials/${x.id}`} className="glass p-4 flex items-center gap-3 hover:border-sky-400/40 transition"><FileText className="text-sky-300 shrink-0" />{x.title}</Link>
+          <Link key={x.id} to={`/materials/${x.id}`} className="glass p-4 flex items-center gap-3 hover:border-orange-400/40 transition"><FileText className="text-orange-300 shrink-0" />{x.title}</Link>
         ))}
       </div>
       <h2 className="h2">Tools</h2>

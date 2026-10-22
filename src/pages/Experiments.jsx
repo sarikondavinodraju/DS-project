@@ -36,7 +36,7 @@ export default function Experiments() {
         <button className="btn-ghost justify-center" onClick={clear}>Clear filters</button>
       </div>
       <div className="flex flex-wrap gap-2 mb-6" role="group" aria-label="Technology filter">
-        {techs.map((t) => <button key={t} onClick={() => setTech(t)} aria-pressed={tech === t} className={`chip !px-3 !py-1 cursor-pointer ${tech === t ? '!bg-sky-500/30 !border-sky-400 !text-white' : ''}`}>{t}</button>)}
+        {techs.map((t) => <button key={t} onClick={() => setTech(t)} aria-pressed={tech === t} className={`chip !px-3 !py-1 cursor-pointer ${tech === t ? '!bg-orange-500/30 !border-orange-400 !text-white' : ''}`}>{t}</button>)}
       </div>
       <p className="text-sm text-slate-400 mb-3">{list.length} experiment{list.length === 1 ? '' : 's'}</p>
       {list.length ? <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">{list.map((e, i) => <ExperimentCard key={e.id} e={e} i={i} onEdit={setEditing} />)}</div>
