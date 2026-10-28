@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Bell, GraduationCap, Github, Linkedin, Menu, Moon, Search, Sun, X } from 'lucide-react'
 import Background3D from './Background3D'
 import SearchBar from './SearchBar'
-import StudentAvatar from './StudentAvatar'
 import student from '../data/student'
 
 const nav = [['/', 'HOME'], ['/modules', 'MODULES'], ['/experiments', 'EXPERIMENTS'], ['/tools', 'TOOLS']]
@@ -34,7 +33,9 @@ export default function Layout() {
               <button className="btn-ghost !p-2" onClick={() => setBell(!bell)} aria-label="Notifications"><Bell size={18} /></button>
               {bell && <div className="absolute right-0 mt-2 w-56 glass !bg-[#0b1226] p-3 text-sm text-slate-300">No new notifications.</div>}
             </div>
-            <Link to="/" className="h-9 w-9 rounded-full overflow-hidden ring-1 ring-orange-400/40 grid place-items-center font-semibold text-slate-900" aria-label="Profile"><StudentAvatar className="h-full w-full" /></Link>
+            <Link to="/" className="h-9 w-9 rounded-full overflow-hidden ring-1 ring-orange-400/40" aria-label="Profile">
+              <img src="/profile.jpeg" alt="Profile" className="h-full w-full object-cover" />
+            </Link>
             <button className="btn-ghost !p-2 md:hidden" onClick={() => setMenu(!menu)} aria-label="Menu" aria-expanded={menu}>{menu ? <X size={18} /> : <Menu size={18} />}</button>
           </div>
         </div>

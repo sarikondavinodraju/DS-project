@@ -42,7 +42,7 @@ export default function Home() {
         <div className="lg:col-start-1 lg:row-start-1"><SearchBar large /></div>
         <aside className="glass p-6 lg:col-start-2 lg:row-start-1 lg:row-span-3 lg:sticky lg:top-24" aria-label="Student profile">
           <div className="flex items-center gap-4 mb-4">
-            <StudentAvatar className="h-20 w-20 rounded-2xl ring-2 ring-orange-400/50 shadow-lg shrink-0" />
+            <img src="/profile.jpeg" alt="Student photo" className="h-20 w-20 rounded-2xl object-cover ring-2 ring-orange-400/50 shadow-lg shrink-0" />
             <div className="min-w-0">
               <h2 className="text-xs tracking-[0.25em] text-orange-300">STUDENT PROFILE</h2>
               <p className="text-xs text-slate-400 mt-1 leading-snug">Mohan Babu University</p>
